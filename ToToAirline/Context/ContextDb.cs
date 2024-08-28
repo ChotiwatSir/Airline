@@ -6,6 +6,8 @@ namespace ToToAirline.Context
 {
     public class ContextDb : DbContext
     {
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<Airline> Airlines { get; set; }
         public DbSet<Airport> Airports { get; set; }
         public DbSet<Baggage> Baggages { get; set; }

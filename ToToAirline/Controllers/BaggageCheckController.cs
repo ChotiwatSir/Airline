@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToToAirline.BaseResponses;
 using ToToAirline.DTOs.BaggageCheck;
@@ -11,6 +12,7 @@ namespace ToToAirline.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize]
     public class BaggageCheckController:ControllerBase
     {
         private readonly IBaggageCheckService _baggageCheckService;

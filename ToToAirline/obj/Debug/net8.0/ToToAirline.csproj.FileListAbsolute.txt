@@ -140,3 +140,5 @@
 /Users/totosan/NewProject/Airline/ToToAirline/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/totosan/NewProject/Airline/ToToAirline/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/totosan/NewProject/Airline/ToToAirline/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/Users/totosan/NewProject/Airline/ToToAirline/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/totosan/NewProject/Airline/ToToAirline/obj/Debug/net8.0/ToToAirline.sourcelink.json

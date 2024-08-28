@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToToAirline.BaseResponses;
 using ToToAirline.DTOs.NoFlyList;
@@ -8,6 +9,7 @@ namespace ToToAirline.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize]
     public class NoFlyListController:ControllerBase
     {
         private readonly INoFlyListService _noFlyListService;

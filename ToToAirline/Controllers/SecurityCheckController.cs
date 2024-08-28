@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToToAirline.BaseResponses;
 using ToToAirline.DTOs.SecurityCheck;
@@ -9,6 +10,7 @@ namespace ToToAirline.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize]
     public class SecurityCheckController : ControllerBase
     {
         private readonly ISecurityCheckService _securityCheckService;

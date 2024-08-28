@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToToAirline.BaseResponses;
 using ToToAirline.DTOs.Airline;
@@ -8,6 +9,7 @@ namespace ToToAirline.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize(Roles = "Admin")]
     public class AirlineController:ControllerBase
     {
         private readonly IAirlineService _airline;

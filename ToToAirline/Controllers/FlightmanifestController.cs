@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToToAirline.BaseResponses;
 using ToToAirline.DTOs.FlightManiFest;
@@ -13,6 +14,7 @@ namespace ToToAirline.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
+    [Authorize]
     public class FlightmanifestController : ControllerBase
     {
         private readonly IFlightManiFestService _flightManiFest;
